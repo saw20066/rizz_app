@@ -40,7 +40,7 @@
 </head>
 <body>
     <div>
-        <h1>Will You Marry Me?</h1>
+        <h1>Will You Marry Me Silvija ?</h1>
         <button class="yes" id="yesbtn" onclick="yesClicked()">Yes ❤️</button>
         <button class="no" onmousemove="random(this)" onclick="alert('You\'re quick and cruel, did you cheat? 😢')">No 💔</button>
     </div>
@@ -88,13 +88,12 @@
         });
     }
 
-    // Fire confetti bursts every 500ms for a total of 5 bursts
-    fireConfetti(); // First burst immediately
+    fireConfetti(); 
     let burstCount = 0;
     const interval = setInterval(() => {
         burstCount++;
         fireConfetti();
-        if (burstCount >= 7) clearInterval(interval); // Stops after 5 bursts
+        if (burstCount >= 7) clearInterval(interval); 
     }, 500);
 }
 
